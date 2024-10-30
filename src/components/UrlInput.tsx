@@ -28,7 +28,7 @@ export const UrlInput: React.FC = () => {
     
     try {
       // const response = await fetch('http://your-api-endpoint/summarize-url', {
-        const response = await fetch('http://localhost:8000/api/v1/text-processing/', {
+        const response = await fetch('http://conciseai.up.railway.app/api/v1/text-processing/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
