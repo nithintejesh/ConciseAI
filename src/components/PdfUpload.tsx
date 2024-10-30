@@ -56,7 +56,7 @@ export const PdfUpload: React.FC = () => {
 
     setLoading(true);
     const formData = new FormData();
-    formData.append('pdf', file);
+    formData.append('file', file);
     
     try {
       const response = await fetch('https://conciseai.up.railway.app/api/v1/text-processing/', {
