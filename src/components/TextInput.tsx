@@ -22,7 +22,7 @@ export const TextInput: React.FC = () => {
     setError('');
     
     try {
-      const response = await fetch('http://conciseai.up.railway.app/api/v1/text-processing/', {
+      const response = await fetch('https://conciseai.up.railway.app/api/v1/text-processing/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
